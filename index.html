@@ -1,0 +1,79 @@
+ 
+<html>
+  <head>
+    <title>The Emotion Identifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body style="background-color: yellowgreen;">
+  <div class="container">
+  
+    <center>
+      <h3 class="btn btn-success heading" style = " font-size: xx-large;font-family: 'Balsamiq Sans'">The Emotion Identifier
+        <br>
+        <span>&#128522;</span>
+        <span>&#128512;</span>
+        <span>&#128532;</span>
+        <span>&#128546;</span>
+        <span>&#128545;</span>
+        <span>&#128548;</span>
+      </h3>
+      <br><br>
+
+      <p style="font-size: 22px; font-family: 'Balsamiq Sans', cursive;color: darkcyan;">Take Your Selfie and we will get your emotion identified through emojis!
+      	<br><br><br><br>
+        <b style = "font-family: 'Balsamiq Sans', cursive; color: brown;">Feeling happy or excited? Get amazed by The Emotion Identifier!</b>
+        <br><br>
+        <b style = "font-family: 'Balsamiq Sans', cursive; color: beige;">Are you sad or upset? Get consoled after a nice break on The Emotion Identifier playing around with expressions!</b>
+        <br><br>
+        <b style = "font-family: 'Balsamiq Sans', cursive; color:royalblue;">Are you an actor or in your Main Caste? Then The Emotion Identifier will help you perfect your emotions or expressions!</b>
+        <br><br>
+      </p>
+      
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label style = "font-family: 'Balsamiq Sans'; color: darkcyan;" >Webcam View - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot()" class="btn btn-success" style="font-family: 'Balsamiq Sans', cursive;">Capture An Image Of My Expression Now!</button>
+              </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label style = "font-family: 'Balsamiq Sans'; color: darkcyan;" >1st Probable Emotion - </label>
+          <p class="emotion_name" id="result_emotion_name" style="font-family: 'Balsamiq Sans'; color: darkcyan;"></p>
+          <p class="emoji" id="update_emoji" style="font-family: 'Balsamiq Sans'; color: darkcyan;"></p>
+          <br><br>
+          <label style = "font-family: 'Balsamiq Sans'; color: darkcyan;" >2nd Probable Emotion - </label>
+          <p class="emotion_name" id="result_emotion_name2" style="font-family: 'Balsamiq Sans'; color: darkcyan;"></p>
+          <p class="emoji" id="update_emoji2" style="font-family: 'Balsamiq Sans'; color: darkcyan;"></p>
+        </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label style = "font-family: 'Balsamiq Sans'; color: darkcyan;" >Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check()" class="btn btn-success" style="font-family: 'Balsamiq Sans', cursive;">Identify My Expression Now!</button>
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
